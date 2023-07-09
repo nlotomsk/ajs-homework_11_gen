@@ -8,24 +8,24 @@ const bowman = {
   defence: 10,
   health: 100,
 };
-const swords = {
+const swordsman = {
   name: 'Маг',
-  type: 'Swordsman',
+  type: 'Magiciann',
   attack: 20,
   level: 1,
   defence: 10,
   health: 100,
 };
-const zavmag = {
+const daemon = {
   name: 'ЗавМаг',
-  type: 'ZavMag',
+  type: 'Daemon',
   health: 100,
   level: 1,
   attack: 40,
   defence: 15,
 };
 
-const team = new Team([bowman, swords, zavmag]);
+const team = new Team([bowman, swordsman, daemon]);
 
 for (const item of team) {
   console.log(item.next().value);
