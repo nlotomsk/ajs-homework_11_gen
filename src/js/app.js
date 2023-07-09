@@ -17,7 +17,7 @@ const swordsman = {
   health: 100,
 };
 const daemon = {
-  name: 'ЗавМаг',
+  name: 'Демон',
   type: 'Daemon',
   health: 100,
   level: 1,
