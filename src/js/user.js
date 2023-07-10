@@ -13,26 +13,8 @@ export default class Team {
   * [Symbol.iterator]() {
     let i = 0;
     const chars = this.characters;
-
-    yield {
-      next() {
-        if (i < chars.length) {
-          const n = i++;
-          return {
-            done: false,
-            value: new Character(
-              chars[n].name,
-              chars[n].type,
-              chars[n].health,
-              chars[n].level,
-              chars[n].attack,
-              chars[n].defence,
-            ),
-          };
-        }
-
-        return { done: true };
-      },
-    };
+    for (let i = 0; i < chars.length; i += 1) {
+      yield chars[i];
+    }
   }
 }
