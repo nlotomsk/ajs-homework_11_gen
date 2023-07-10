@@ -1,6 +1,3 @@
-import Character from './basic';
-
-
 export default class Team {
   constructor(characters) {
     this.characters = characters;
@@ -13,7 +10,7 @@ export default class Team {
   * [Symbol.iterator]() {
     let i = 0;
     const chars = this.characters;
-    for (let i = 0; i < chars.length; i += 1) {
+    for (i = 0; i < chars.length; i += 1) {
       yield chars[i];
     }
   }
